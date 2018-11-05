@@ -41,3 +41,4 @@ function data_modulated=MOD_QAM(data_generated)
             data_modulated(m)=data_modulated(m)+3i;
         end
     end
+    data_modulated = data_modulated/sqrt(10);

@@ -1,7 +1,7 @@
 % This function demodulates the QAM symbol into 4 corresponding bits
 function demodulated_data=DEMOD_QAM(input_data)
+    input_data = input_data * sqrt(10);
     demodulated_data=zeros(length(input_data),4);
-    input_data=input_data.*sqrt(10);
     for i=1:length(input_data)
         real_part(i)=real(input_data(i));
         imag_part(i)=imag(input_data(i));
